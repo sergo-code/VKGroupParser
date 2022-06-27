@@ -44,7 +44,7 @@ https://oauth.vk.com/authorize?client_id=111111&display=mobile&redirect_uri=http
 python3 .\vk.py <DOMAIN> <OWNER_ID> <TOKEN_VK_API>
 ```  
 DOMAIN - Короткий адрес сообщества.  
-OWNER_ID - Идентификатор сообщества, со стены которого необходимо получить записи
+OWNER_ID - Идентификатор сообщества, со стены которого необходимо получить записи. 
 9) Для работы с телеграмм ботом  
 В data/allow.txt добавить пользователей (каждого с новой строки).  
 В data/words.txt добавить слова (каждое с новой строки).  
