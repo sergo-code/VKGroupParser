@@ -301,5 +301,6 @@ async def main():
 if __name__ == '__main__':
     mongo = MongoDB()
     loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
     loop.create_task(main())
     executor.start_polling(dp, skip_updates=True)
