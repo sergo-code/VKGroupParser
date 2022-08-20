@@ -267,7 +267,9 @@ if __name__ == '__main__':
     TOKEN = sys.argv[3]
     toggleActiveModel(DOMAIN, "1")
     try:
-        asyncio.get_event_loop().run_until_complete(main())
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        loop.run_until_complete(main())
     except Exception as e:
         toggleActiveModel(DOMAIN, "0")
         logging.error(f'{e}')
