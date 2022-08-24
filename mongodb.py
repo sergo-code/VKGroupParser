@@ -1,13 +1,14 @@
 from pymongo import MongoClient
 import asyncio
 from logger import *
+from config import host, port, db, collection
 
 
 class MongoDB:
     def __init__(self):
-        self.client = MongoClient('localhost', 27017)
-        self.db = self.client['vk']
-        self.collections = self.db['user']
+        self.client = MongoClient(host, port)
+        self.db = self.client[db]
+        self.collections = self.db[collection]
 
     async def func(self):
         await asyncio.sleep(0.01)

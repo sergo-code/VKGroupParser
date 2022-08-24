@@ -26,7 +26,7 @@ db.createCollection('user')
 ```  
 5) Установите все зависимости:  
 ```
-python3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 6) Добавить словарь для поддержки русского языка в pyenchant  
 Словари в папке dictionary: ru_RU.aff и ru_RU.dic  
